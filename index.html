@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BASS - I MARSZ</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .page-slider {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      background: #120103;
+      color: #fff;
+      text-align: center;
+
+    }
+
+    header {
+      background: #3e474f;
+      box-shadow: 0 0.5em 1em #111;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 900;
+      width: 100%;
+    }
+
+    header label {
+      color: #788188;
+      cursor: pointer;
+      display: inline-block;
+      line-height: 4.25em;
+      font-size: 1em;
+      font-weight: bold;
+      padding: 0 1em;
+    }
+
+    header label:hover {
+      background: #2e353b;
+    }
+
+    .slide {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: -100px;
+      z-index: 10;
+      padding: 8em 1em 1em;
+      background-color: #120103;
+      background-position: 50% 50%;
+      background-size: cover;
+      transition: left 0s 0.75s;
+
+
+    }
+
+    .slide-one {
+      background-color: #128690;
+      margin: auto;
+    width: 100%;
+    text-align: center;
+    left: -2vw;
+    }
+
+    .slide-two {
+      background-color: #128690;
+    }
+
+    .slide-three {
+      background-color: #128690;
+    }
+
+    .slide-four {
+      background-image: url(https://unsplash.it/1800/1200?image=555);
+    }
+
+    [id^="slide"]:checked+.slide {
+      left: 0;
+      z-index: 100;
+      transition: left 0.65s ease-out;
+    }
+
+    .slide h1{
+      position: relative;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: transform 0.5s 0.5s, opacity 0.5s;
+      margin-right: 20px;
+      color: #fef884  ;
+      left: -1vw;
+    }
+
+    .slide p{
+      position: relative;
+      left: -2vw;
+    }
+
+    [id^="slide"]:checked+.slide h1 {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.5s 0.5s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-slider">
+    <header>
+      <label for="slide-1-trigger">HOME</label>
+      <label for="slide-2-trigger">Info</label>
+      <label for="slide-3-trigger">Trasa</label>
+      <label for="slide-4-trigger">Kontakt</label>
+    </header>
+    <input id="slide-1-trigger" type="radio" name="slides" checked>
+    <section class="slide slide-one">
+      <h2>BASS - BIURO AKTYWNOŚCI SPORTOWEJ SORU</h2>
+      <h3>zaprasza na:</h3>
+      <h1>I MARSZ SOR TO SOR</h1>
+      <div class="css-script-ads" style="margin-top:150px;" align="center">
+        <script type="text/javascript">
+          <!--
+          google_ad_client = "ca-pub-2783044520727903";
+          /* CSSScript Demo Page */
+          google_ad_slot = "3025259193";
+          google_ad_width = 728;
+          google_ad_height = 90;
+          //
+          -->
+        </script>
+        <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+      </div>
+    </section>
+    <input id="slide-2-trigger" type="radio" name="slides">
+    <section class="slide slide-two">
+      <h1>Więcej informacji?</h1>
+      <h3>Czas na przygodę!</h3>
+      <br>
+      <p>START: SOR Ligota</p>
+      <p>KONIEC: SOR Dąbrowa Górnicza</p>
+      <img src="images/flake.png" alt="flake-img">
+    </section>
+    <input id="slide-3-trigger" type="radio" name="slides">
+    <section class="slide slide-three">
+      <h1>Section Three</h1>
+    </section>
+    <input id="slide-4-trigger" type="radio" name="slides">
+    <section class="slide slide-four">
+      <h1>Section Four</h1>
+    </section>
+  </div>
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-46156385-1', 'cssscript.com');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>
